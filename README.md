@@ -4,11 +4,13 @@
 
 ## 安装
 
-下载 [安装包](dsh-anti-overengineering-1.1.2.tgz)，执行：
+从 npm 安装当前版本：
 
 ```powershell
-dsh plugin --profile desktop add /absolute/path/dsh-anti-overengineering-1.1.2.tgz
+dsh plugin --profile desktop add dsh-anti-overengineering@1.2.1
 ```
+
+也可下载 [安装包](dsh-anti-overengineering-1.2.1.tgz)，将上述包名替换为安装包的绝对路径。
 
 配置 Jev 后重启应用，在新会话中选择 **反过度工程化**。CLI Web 使用 `--profile web`。
 
@@ -41,11 +43,13 @@ OpenCode 付费线路使用 `https://opencode.ai/inference/v1/systemone`，模�
 
 ## 如何工作
 
-在工具执行前，将用户要求、Agent 决策、接口返回的 reasoning 和工具行为元数据发送给 Jev，按规则评分。默认达到 `0.85` 且不在冷却期时，暂停本批工具调用并追加纠偏提示。频率、阈值和单条规则均可配置。
+在带写操作的工具批次执行前，将用户要求、Agent 决策、接口返回的 reasoning 和工具行为元数据发送给 Jev，按规则评分。默认达到 `0.85` 且不在冷却期时，暂停本批写操作并追加纠偏提示，只读调用不受影响。频率、阈值和单条规则均可配置。
 
-评审输入来自当前消息视图，不主动读取代码、工具参数或输出正文。原版规则中的“写入／补丁”措辞保持原文，实际判断依据是 Agent 对这些行动的决策与行为记录。
+评审输入来自当前消息视图，不主动读取代码，不向 Jev 发送工具参数或输出正文；命令参数仅在本地用于识别写操作。原版规则中的“写入／补丁”措辞保持原文，实际判断依据是 Agent 对这些行动的决策与行为记录。
 
 这些文本会发送至所配置的 Jev 服务，可能包含 Agent 引用的项目内容。历史受消息压缩及字符预算限制；reasoning 仅包含接口实际返回的文本。接口失败默认放行，可配置为拒绝。
+
+每轮回复下方显示本轮与本会话累计的 Jev 调用、输入 token、规则命中和预估费用。`1.2.1` 修复用量查询路由注册失败；升级需同时加载新版 Host 与客户端，不能仅新建会话。完整变更见 [更新记录](CHANGELOG.md)。
 
 ## 资料与许可
 

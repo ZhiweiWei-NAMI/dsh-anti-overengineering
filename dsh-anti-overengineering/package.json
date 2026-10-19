@@ -1,17 +1,32 @@
 {
   "name": "dsh-anti-overengineering",
-  "version": "1.1.2",
-  "private": true,
+  "version": "1.2.1",
   "description": "Jev 基于 Agent 决策、接口返回的 reasoning 与工具行为元数据纠偏，不读取写入内容。",
   "type": "module",
   "license": "MIT",
   "exports": {
     ".": "./index.js",
+    "./client": "./client.js",
     "./policy": "./policy.js",
     "./locale/*.json": "./locale/*.json",
     "./icon": "./icon.svg"
   },
-  "files": ["index.js", "policy.js", "rules.json", "cordis.patch.yml", "locale", "icon.svg", "README.md", "LICENSE"],
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "files": ["index.js", "policy.js", "usage.js", "client.js", "rules.json", "cordis.patch.yml", "locale", "icon.svg", "README.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-chat", "@deepseek-ai/dsh-client-locale", "@deepseek-ai/dsh-client-resources", "@deepseek-ai/dsh-client-connection"]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/schemastery": "^3.18.2",
+    "@deepseek-ai/dsh-llm": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-credentials": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-client-connection": "^0.2.1-rc.2",
+    "@deepseek-ai/dsh-storage-domain": "^0.2.1-rc.2",
+    "zod": "^4.0.0"
+  },
+  "repository": { "type": "git", "url": "https://github.com/ZhiweiWei-NAMI/dsh-anti-overengineering.git" },
   "engines": { "node": "^22.19.0 || >=24.0.0", "dsh": "0.2.1-rc.2" }
 }

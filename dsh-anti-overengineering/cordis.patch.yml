@@ -6,7 +6,7 @@
       config:
         enabled: true
         presetIds: [anti-overengineering]
-        # Review decisions/returned reasoning/tool metadata only; never inspect tool arguments or outputs.
+        # Review writes only; inspect command arguments locally for routing, never send them or outputs to Jev.
         # revise: deny pending tools and inject correction. remind: continue and inject advice.
         mode: revise
         threshold: 0.85
@@ -16,7 +16,7 @@
           apiKeyEnv: JEV_API_KEY
           timeoutMs: 15000
           onError: allow
-          contextChars: 24000
+          contextChars: 6000
         cadence:
           checkEveryToolRounds: 1
           globalCooldownRounds: 2
@@ -34,7 +34,7 @@
       config:
         id: anti-overengineering
         name: 反过度工程化
-        description: "通过 Jev 按 AE01—AE10 规则评估 Agent 决策、接口返回的 reasoning 与工具行为历史，纠正过度工程化并保留任务完整性。相关文本会发送至 Jev，不读取代码或工具参数。"
+        description: "通过 Jev 按 AE01—AE10 规则评估 Agent 决策、接口返回的 reasoning 与工具行为历史，纠正过度工程化并保留任务完整性。相关文本会发送至 Jev，不读取文件内容；命令参数仅在本地用于识别写操作，不发送至 Jev。"
         order: 25
         plugins:
           - id: persona
