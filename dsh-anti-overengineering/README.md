@@ -1,13 +1,13 @@
 # DeepSeek Harness 行为纠偏预设
 
-版本 **1.1.0**。适配目标：DeepSeek Harness **0.2.1-rc.2**，固定来源提交 `687f282e8625c6b8d11ff58211a90524be2e4317`；Node `^22.19.0 || >=24.0.0`。其他运行时版本未核验。
+版本 **1.1.1**。本版补齐预设选择器中的中文名称与用途描述，不改变判规行为。适配目标：DeepSeek Harness **0.2.1-rc.2**，固定来源提交 `687f282e8625c6b8d11ff58211a90524be2e4317`；Node `^22.19.0 || >=24.0.0`。其他运行时版本未核验。
 
 这是可选的 `anti-overengineering` preset + Host 插件，不是聊天模型 provider，也不依赖 AutoCTX。它把 Agent 的决策说明、模型接口实际返回的 reasoning 文本及工具行为元数据交给 Jev，在有正面证据表明行动多余时注入固定纠偏提示。**不读取文件、不审查代码修改、不发送工具参数或工具原始输出。**
 
 ## 安装
 
 ```powershell
-dsh plugin --profile desktop add /absolute/path/dsh-anti-overengineering-1.1.0.tgz
+dsh plugin --profile desktop add /absolute/path/dsh-anti-overengineering-1.1.1.tgz
 ```
 
 CLI Web 使用 `--profile web`。安装后重启对应应用，创建新会话并选择 **anti-overengineering**。不改变全局默认 preset，主执行模型与账号沿用原配置。仅修改源码目录不会更新已安装的 TGZ。

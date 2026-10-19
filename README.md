@@ -1,6 +1,6 @@
 # DSH 反过度工程化：行为纠偏预设
 
-**当前版本 1.1.0**：根据 Agent 决策说明、接口实际返回的 reasoning 文本及工具行为历史纠偏，**不检查代码、不读取工具参数或工具输出正文**。这是 DeepSeek Harness 的可选 preset + Host 插件，不是聊天模型 provider，也不依赖 AutoCTX。
+**当前版本 1.1.1**：根据 Agent 决策说明、接口实际返回的 reasoning 文本及工具行为历史纠偏，**不检查代码、不读取工具参数或工具输出正文**。这是 DeepSeek Harness 的可选 preset + Host 插件，不是聊天模型 provider，也不依赖 AutoCTX。
 
 适配目标为官方 DeepSeek Harness **0.2.1-rc.2**，来源提交 `687f282e8625c6b8d11ff58211a90524be2e4317`；Node `^22.19.0 || >=24.0.0`。其他版本未核验。
 
@@ -9,10 +9,10 @@
 完整、随安装包提供的操作说明以[插件 README](dsh-anti-overengineering/README.md)为准，包含 Windows/Desktop 安装、OpenCode 付费 Jev 和 TypeSafe 官方线路、凭据格式及全部运行参数。
 
 ```powershell
-dsh plugin --profile desktop add /absolute/path/dsh-anti-overengineering-1.1.0.tgz
+dsh plugin --profile desktop add /absolute/path/dsh-anti-overengineering-1.1.1.tgz
 ```
 
-安装包：[dsh-anti-overengineering-1.1.0.tgz](dsh-anti-overengineering-1.1.0.tgz)。安装后重启对应应用，新会话选择 **anti-overengineering**，不改变全局默认预设。
+安装包：[dsh-anti-overengineering-1.1.1.tgz](dsh-anti-overengineering-1.1.1.tgz)。安装后重启对应应用，新会话选择 **anti-overengineering**，不改变全局默认预设。
 
 OpenCode 付费线路配置：`endpoint: https://opencode.ai/inference/v1/systemone`、`model: jev-1.13`、`apiKeyEnv: JEV_API_KEY`。官方默认线路为 `https://api.typesafe.ai/v1/systemone`、`jev-latest`。地址、模型和 Key 必须匹配，不能用普通聊天接口代替。OpenCode 配置来自现有本地接入实现，未用你的账户实测。
 
@@ -32,6 +32,8 @@ OpenCode 付费线路配置：`endpoint: https://opencode.ai/inference/v1/system
 
 ## 审查与版本说明
 
+1.1.1 补齐 preset 的中文名称“反过度工程化”与用途、外发提醒描述，不改变判规行为。
+
 静态阅读未发现需要删除的明显过度防御；外部响应校验、超时取消、批次共享和状态持久化各有实际用途。不能仅靠代码阅读证明真实误报率或行为纠偏效果。
 
 1.1.0 根据用户要求从写入内容审查改为行为历史判规，包含模型 API 实际返回的 reasoning，采用 BH01—BH06 规则和新状态域。旧版 `writeTools`、`checkEveryWriteRounds` 及 AE 规则覆盖项不再适用。1.0.1 曾修复微小上下文预算下 `slice(-0)` 导致全文回流的问题。
@@ -46,7 +48,7 @@ OpenCode 付费线路配置：`endpoint: https://opencode.ai/inference/v1/system
 - [历史原生接入说明](03-native-preset-and-workflow.zh.md)
 - [原始验证记录](04-validation.zh.md)与 [validation](validation/)
 
-[原始安装包](dsh-anti-overengineering-1.0.0.tgz)和[中间修订包](dsh-anti-overengineering-1.0.1.tgz)仅供历史复核，安装请选择 **1.1.0**。[SHA256SUMS.txt](SHA256SUMS.txt) 仅覆盖最初交付快照，不适用于已修改源码、说明或新增文件和安装包。
+[原始安装包](dsh-anti-overengineering-1.0.0.tgz)和[中间修订包](dsh-anti-overengineering-1.0.1.tgz)仅供历史复核，安装请选择 **1.1.1**。[SHA256SUMS.txt](SHA256SUMS.txt) 仅覆盖最初交付快照，不适用于已修改源码、说明或新增文件和安装包。
 
 ## 许可
 
