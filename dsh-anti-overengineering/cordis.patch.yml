@@ -34,7 +34,7 @@
       config:
         id: anti-overengineering
         name: 反过度工程化
-        description: "通过 Jev 检查 Agent 决策、接口返回的 reasoning 与工具行为历史，纠正偏题、重复调查和无必要扩张；不审查代码或工具参数。启用后相关文本会发送至 Jev。"
+        description: "通过 Jev 按 AE01—AE10 规则评估 Agent 决策、接口返回的 reasoning 与工具行为历史，纠正过度工程化并保留任务完整性。相关文本会发送至 Jev，不读取代码或工具参数。"
         order: 25
         plugins:
           - id: persona
