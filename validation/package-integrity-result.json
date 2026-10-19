@@ -1,0 +1,46 @@
+{
+  "tgz_sha256": "d66659ce00290b8ec15af00c0c52d0160a816ea7d7fafd92dcb6dd54918f96e1",
+  "files": [
+    {
+      "file": "LICENSE",
+      "matches_final_source": true
+    },
+    {
+      "file": "index.js",
+      "matches_final_source": true
+    },
+    {
+      "file": "policy.js",
+      "matches_final_source": true
+    },
+    {
+      "file": "locale/en.json",
+      "matches_final_source": true
+    },
+    {
+      "file": "package.json",
+      "matches_final_source": true
+    },
+    {
+      "file": "rules.json",
+      "matches_final_source": true
+    },
+    {
+      "file": "locale/zh.json",
+      "matches_final_source": true
+    },
+    {
+      "file": "README.md",
+      "matches_final_source": true
+    },
+    {
+      "file": "icon.svg",
+      "matches_final_source": true
+    },
+    {
+      "file": "cordis.patch.yml",
+      "matches_final_source": true
+    }
+  ],
+  "result": "pass"
+}

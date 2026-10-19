@@ -1,0 +1,56 @@
+[
+  {
+    "id": "BH01",
+    "title": "偏离任务的行动",
+    "judge_question_en": "Do the agent's stated decisions or returned reasoning positively show that the pending tools will pursue unrelated work outside the user's task and its necessary dependencies? Do not infer intent from tool names alone. Requested end-to-end work and affected callers are allowed.",
+    "correction_zh": "停止明确偏离当前任务的行动，回到用户要求及完成它必须涉及的调用方。不要根据本提醒删除未经审查的实现。",
+    "correction_en": "Stop clearly unrelated actions and return to the requested task and necessary dependencies. Do not delete unreviewed implementation based on this notice.",
+    "sources": ["S01", "S03", "S06"],
+    "source_relation": "behavior-only adaptation of task-scope guidance"
+  },
+  {
+    "id": "BH02",
+    "title": "为假想需求扩建计划",
+    "judge_question_en": "Does the agent explicitly plan to add unrequested capabilities, options or architecture solely for a hypothetical future, and does the pending tool batch continue that plan? Judge the stated plan, not unseen code. Explicit user configuration and known deployment requirements are allowed.",
+    "correction_zh": "撤去仅为假想未来需求扩建的计划，直接完成当前场景。保留用户明确要求的配置和已知部署约束。",
+    "correction_en": "Drop plans serving only hypothetical future needs. Complete the current use case while preserving requested configuration and known deployment requirements.",
+    "sources": ["S01", "S02", "S13"],
+    "source_relation": "behavior-only adaptation of YAGNI guidance"
+  },
+  {
+    "id": "BH03",
+    "title": "没有新目标的重复调查",
+    "judge_question_en": "Does the visible decision/reasoning history explicitly establish that the needed fact is already resolved, yet the agent plans another investigation of that same fact without a new question or changed evidence? Repeated tool names alone are insufficient. New failures, changed requirements and unresolved facts justify further investigation.",
+    "correction_zh": "停止重复调查已经有明确答案的问题，复用已获得的结论并继续实施；存在新证据、新故障或尚未解决的问题时仍应调查。",
+    "correction_en": "Reuse resolved findings rather than investigating them again without a new question. Continue implementation; investigate genuinely new evidence, failures or unresolved facts.",
+    "sources": ["S04", "S07"],
+    "source_relation": "behavior-level engineering derivation"
+  },
+  {
+    "id": "BH04",
+    "title": "无新风险的验证循环",
+    "judge_question_en": "Does the agent's own visible decision/reasoning history say the relevant acceptance checks have passed, but propose additional checks without any concrete unresolved risk, changed code, new failure or required gate? Tool success flags do not prove tests passed. User-requested validation and checks after actual changes remain necessary.",
+    "correction_zh": "已有验收证据充分且没有新的具体风险时，停止追加验证并继续交付。代码变化、真实失败、用户要求和现有必需检查仍须处理。",
+    "correction_en": "Stop adding validation after sufficient acceptance evidence when no new concrete risk remains. Preserve checks required by changes, actual failures, the user or existing gates.",
+    "sources": ["S04", "S06", "S07"],
+    "source_relation": "behavior-level proportional-validation guidance"
+  },
+  {
+    "id": "BH05",
+    "title": "假设故障驱动的防御扩张",
+    "judge_question_en": "Does the agent explicitly justify extra retries, fallback plans or defensive engineering only with an invented impossible or unsupported failure scenario, and plan to continue it now? Do not inspect or guess unseen checks. Real external input, observed failures, security requirements and actual concurrency risks justify defensive work.",
+    "correction_zh": "停止只为臆测故障扩建防御的行动，按已知接口与实际风险继续。保留真实外部输入、安全要求、并发风险和已观测故障所需处理。",
+    "correction_en": "Stop defensive work justified only by invented failure scenarios. Follow known interfaces and actual risks; retain real input, security, concurrency and observed-failure handling.",
+    "sources": ["S01", "DSH:docs/defensive-patterns/general.md"],
+    "source_relation": "behavior-only adaptation of hypothetical-defense guidance"
+  },
+  {
+    "id": "BH06",
+    "title": "无独立产出的代理扩张",
+    "judge_question_en": "Does the stated decision/reasoning history clearly show that a planned delegation or extra review duplicates an already owned or completed deliverable, or has no concrete independent deliverable needed by the task? Never infer assignments or completion from tool names alone. Explicit user review requests and genuinely independent parallel work are allowed.",
+    "correction_zh": "取消没有独立必要产出或明确重复已分配工作的额外代理调用，复用已有结果并继续。保留用户要求的审查和真正独立的并行工作。",
+    "correction_en": "Cancel redundant delegations without an independent necessary deliverable. Reuse existing results while preserving requested reviews and genuinely independent parallel work.",
+    "sources": ["S07", "S15"],
+    "source_relation": "behavior-level delegation-cost guidance"
+  }
+]

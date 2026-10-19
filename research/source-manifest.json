@@ -1,0 +1,541 @@
+{
+  "research_date": "2026-10-19",
+  "coverage_claim": "Targeted primary-source corpus; not an exhaustive inventory of the internet.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Prompting best practices",
+      "publisher": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices#overeagerness",
+      "evidence_sections": [
+        "Overeagerness",
+        "Reduce file creation in agentic coding",
+        "Overthinking and excessive thoroughness",
+        "Avoid focusing on passing tests and hardcoding"
+      ],
+      "web_citation_ref": "turn9view3",
+      "rule_candidates": [
+        "scope",
+        "speculation",
+        "abstraction",
+        "defensive-code",
+        "comment-noise",
+        "temporary-files"
+      ],
+      "status": "link-and-short-excerpt-only",
+      "license": "No open redistribution license verified",
+      "retrieved_at_utc": "2026-10-19",
+      "local_path": "web-source-index.md",
+      "source_type": "original-publisher-webpage",
+      "commit": null,
+      "modification": "No full-text copy bundled; editor-written summary and a short excerpt only."
+    },
+    {
+      "id": "S02",
+      "title": "What to look for in a code review",
+      "repo": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "source_path": "review/reviewer/looking-for.md",
+      "local_path": "external-originals/google-eng-practices/looking-for.md",
+      "license": "CC-BY-3.0",
+      "license_path": "external-originals/google-eng-practices/LICENSE",
+      "rule_candidates": [
+        "scope",
+        "speculation",
+        "abstraction",
+        "readability",
+        "test-quality"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/reviewer/looking-for.md",
+      "url": "https://github.com/google/eng-practices/blob/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/reviewer/looking-for.md",
+      "bytes": 11330,
+      "sha256": "0a6643fc4ce2bc73e4d7a4ac01df694085adf9bd70cb499c5e8645dfd8c1f839",
+      "git_blob_sha": "c27e26edbf0f42603a16dd719c825f6801226191",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "Complexity",
+        "Tests",
+        "Comments",
+        "Style",
+        "Context"
+      ],
+      "web_citation_ref": "turn1search4",
+      "publisher": "google",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S03",
+      "title": "Small CLs",
+      "repo": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "source_path": "review/developer/small-cls.md",
+      "local_path": "external-originals/google-eng-practices/small-cls.md",
+      "license": "CC-BY-3.0",
+      "license_path": "external-originals/google-eng-practices/LICENSE",
+      "rule_candidates": [
+        "scope",
+        "unrelated-refactoring",
+        "test-scope"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/developer/small-cls.md",
+      "url": "https://github.com/google/eng-practices/blob/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/developer/small-cls.md",
+      "bytes": 12289,
+      "sha256": "6bc55ce9a752bbb26df430a55cd12014beee684ed04e94841989ac86558817c9",
+      "git_blob_sha": "0501c55016c0ef06308d0147700a895be28e5c45",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "What is Small?",
+        "Separate Out Refactorings",
+        "Keep related test code in the same CL"
+      ],
+      "web_citation_ref": "turn8view2",
+      "publisher": "google",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S04",
+      "title": "The Standard of Code Review",
+      "repo": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "source_path": "review/reviewer/standard.md",
+      "local_path": "external-originals/google-eng-practices/standard.md",
+      "license": "CC-BY-3.0",
+      "license_path": "external-originals/google-eng-practices/LICENSE",
+      "rule_candidates": [
+        "evidence",
+        "avoid-perfection-loop",
+        "existing-style"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/reviewer/standard.md",
+      "url": "https://github.com/google/eng-practices/blob/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/reviewer/standard.md",
+      "bytes": 5745,
+      "sha256": "c37144f9f8880092c3d48cd22a4e4ce30dbdefa4f4b2612a3c37b2a4bd838ae2",
+      "git_blob_sha": "081822f3999b33c59277ad7d1c3360d027492850",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "The Standard of Code Review",
+        "Principles"
+      ],
+      "web_citation_ref": "turn8view3",
+      "publisher": "google",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S05",
+      "title": "Speed of Code Reviews",
+      "repo": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "source_path": "review/reviewer/speed.md",
+      "local_path": "external-originals/google-eng-practices/speed.md",
+      "license": "CC-BY-3.0",
+      "license_path": "external-originals/google-eng-practices/LICENSE",
+      "rule_candidates": [
+        "avoid-perfection-loop"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/reviewer/speed.md",
+      "url": "https://github.com/google/eng-practices/blob/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/review/reviewer/speed.md",
+      "bytes": 7154,
+      "sha256": "06d02508ad748ed983d292d0494d5ed108f85c9482494cdc9ca73738e3767dca",
+      "git_blob_sha": "d3b989189dd8ddd42ed54e5077bd6ce62e29b888",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "Why Should Code Reviews Be Fast?",
+        "Response Time vs. Interruption"
+      ],
+      "web_citation_ref": null,
+      "publisher": "google",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S06",
+      "title": "Codex GPT-5.2 general coding prompt",
+      "repo": "openai/codex",
+      "commit": "d28be12577cf5e267c97d3018a490d76da4d28e7",
+      "source_path": "codex-rs/core/gpt_5_2_prompt.md",
+      "local_path": "external-originals/openai-codex/gpt_5_2_prompt.md",
+      "license": "Apache-2.0",
+      "license_path": "external-originals/openai-codex/LICENSE",
+      "rule_candidates": [
+        "scope",
+        "complexity",
+        "root-cause",
+        "unrelated-bugs",
+        "test-scope",
+        "planning-overhead"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/openai/codex/d28be12577cf5e267c97d3018a490d76da4d28e7/codex-rs/core/gpt_5_2_prompt.md",
+      "url": "https://github.com/openai/codex/blob/d28be12577cf5e267c97d3018a490d76da4d28e7/codex-rs/core/gpt_5_2_prompt.md",
+      "bytes": 21652,
+      "sha256": "415333a461404a790c981fb00a7b9dc73b1906d3f87133dc8afe7ed77e92bd67",
+      "git_blob_sha": "8aa188f5e1c507291f329033a94c7a38b9f3c7b8",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "Planning",
+        "Task execution",
+        "Validating your work",
+        "Ambition vs. precision"
+      ],
+      "web_citation_ref": null,
+      "publisher": "openai",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S07",
+      "title": "Codex GPT-5.2-Codex prompt",
+      "repo": "openai/codex",
+      "commit": "d28be12577cf5e267c97d3018a490d76da4d28e7",
+      "source_path": "codex-rs/core/gpt-5.2-codex_prompt.md",
+      "local_path": "external-originals/openai-codex/gpt-5.2-codex_prompt.md",
+      "license": "Apache-2.0",
+      "license_path": "external-originals/openai-codex/LICENSE",
+      "rule_candidates": [
+        "comment-noise",
+        "respect-user-changes",
+        "planning-overhead"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/openai/codex/d28be12577cf5e267c97d3018a490d76da4d28e7/codex-rs/core/gpt-5.2-codex_prompt.md",
+      "url": "https://github.com/openai/codex/blob/d28be12577cf5e267c97d3018a490d76da4d28e7/codex-rs/core/gpt-5.2-codex_prompt.md",
+      "bytes": 7589,
+      "sha256": "1b3dd697043a7f613c691a3721a450251626685b3e97ac3ad3d35ea62758a31e",
+      "git_blob_sha": "8e3f08fb514a6fe82376817aa0a0c960cfbc4656",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "Editing constraints",
+        "Plan tool"
+      ],
+      "web_citation_ref": null,
+      "publisher": "openai",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S08",
+      "title": "Anthropic Code Simplifier agent",
+      "repo": "anthropics/claude-plugins-official",
+      "commit": "ea10b213686c90bb1984b2016937310e05336cf3",
+      "source_path": "plugins/code-simplifier/agents/code-simplifier.md",
+      "local_path": "external-originals/anthropic-code-simplifier/code-simplifier.md",
+      "license": "Apache-2.0",
+      "license_path": "external-originals/anthropic-code-simplifier/LICENSE",
+      "rule_candidates": [
+        "abstraction",
+        "readability",
+        "preserve-behavior",
+        "scope",
+        "comment-noise"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/ea10b213686c90bb1984b2016937310e05336cf3/plugins/code-simplifier/agents/code-simplifier.md",
+      "url": "https://github.com/anthropics/claude-plugins-official/blob/ea10b213686c90bb1984b2016937310e05336cf3/plugins/code-simplifier/agents/code-simplifier.md",
+      "bytes": 3129,
+      "sha256": "2a51e8d210580d9f66ac2ed1226c41f9374565fc275da30d7bb95f65c2cc87bb",
+      "git_blob_sha": "05e361b4ef1b688203251989707f8a924a9ed266",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "Preserve Functionality",
+        "Enhance Clarity",
+        "Maintain Balance",
+        "Focus Scope"
+      ],
+      "web_citation_ref": null,
+      "publisher": "anthropics",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S09",
+      "title": "Karpathy-inspired behavioral guidelines",
+      "repo": "multica-ai/andrej-karpathy-skills",
+      "commit": "2c606141936f1eeef17fa3043a72095b4765b9c2",
+      "source_path": "CLAUDE.md",
+      "local_path": "external-originals/karpathy-inspired/CLAUDE.md",
+      "license": "MIT (declared in upstream README; standalone LICENSE absent)",
+      "license_path": "external-originals/karpathy-inspired/LICENSE-EVIDENCE.md",
+      "rule_candidates": [
+        "scope",
+        "speculation",
+        "abstraction",
+        "defensive-code",
+        "unrelated-refactoring",
+        "own-orphans",
+        "proportionate-process"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/multica-ai/andrej-karpathy-skills/2c606141936f1eeef17fa3043a72095b4765b9c2/CLAUDE.md",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/CLAUDE.md",
+      "bytes": 2357,
+      "sha256": "694a2d721e41c385f3db492838c23299826df5ba9809e3b0721aac70021e196a",
+      "git_blob_sha": "daced9bd64f25908ebedeb4701fb406985dc8366",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "Simplicity First",
+        "Surgical Changes",
+        "Goal-Driven Execution",
+        "Tradeoff"
+      ],
+      "web_citation_ref": "turn3view1",
+      "publisher": "multica-ai",
+      "source_type": "community-authored-guideline",
+      "redistribution_note": "README declares MIT; no standalone upstream LICENSE exists. See accompanying LICENSE-EVIDENCE.md."
+    },
+    {
+      "id": "S10",
+      "title": "PEP 20 — The Zen of Python",
+      "repo": "python/peps",
+      "commit": "6068058b896441388bbf22f2607ab681193f6a3d",
+      "source_path": "peps/pep-0020.rst",
+      "local_path": "external-originals/python-peps/pep-0020.rst",
+      "license": "Public domain (stated in document)",
+      "license_path": "external-originals/python-peps/pep-0020.rst#Copyright",
+      "rule_candidates": [
+        "readability",
+        "complexity",
+        "clear-errors"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/python/peps/6068058b896441388bbf22f2607ab681193f6a3d/peps/pep-0020.rst",
+      "url": "https://github.com/python/peps/blob/6068058b896441388bbf22f2607ab681193f6a3d/peps/pep-0020.rst",
+      "bytes": 1648,
+      "sha256": "742999637cc96eef52e8148fdf65a6065a0953daee92bb48b8c739efcf6def07",
+      "git_blob_sha": "5e0543dcfa2d156367d96799967241aedf589919",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "The Zen of Python",
+        "Copyright"
+      ],
+      "web_citation_ref": "turn7view0",
+      "publisher": "python",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S11",
+      "title": "Testing Library Guiding Principles",
+      "repo": "testing-library/testing-library-docs",
+      "commit": "7c49d046b100e657c64bae78270a5813c1c02eb6",
+      "source_path": "docs/guiding-principles.mdx",
+      "local_path": "external-originals/testing-library/guiding-principles.mdx",
+      "license": "MIT",
+      "license_path": "external-originals/testing-library/LICENSE",
+      "rule_candidates": [
+        "test-quality",
+        "implementation-mirror-tests"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/testing-library/testing-library-docs/7c49d046b100e657c64bae78270a5813c1c02eb6/docs/guiding-principles.mdx",
+      "url": "https://github.com/testing-library/testing-library-docs/blob/7c49d046b100e657c64bae78270a5813c1c02eb6/docs/guiding-principles.mdx",
+      "bytes": 1293,
+      "sha256": "34bbab67212a48b0f84c14b9244c121e78eb257417b0e08f01691c500d82514b",
+      "git_blob_sha": "1825f345b6e58bb57ae4f65136e26b2e35ea7ed8",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "Guiding Principles"
+      ],
+      "web_citation_ref": "turn7view2",
+      "publisher": "testing-library",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S12",
+      "title": "Testing Library Introduction",
+      "repo": "testing-library/testing-library-docs",
+      "commit": "7c49d046b100e657c64bae78270a5813c1c02eb6",
+      "source_path": "docs/intro.mdx",
+      "local_path": "external-originals/testing-library/intro.mdx",
+      "license": "MIT",
+      "license_path": "external-originals/testing-library/LICENSE",
+      "rule_candidates": [
+        "test-quality",
+        "implementation-mirror-tests"
+      ],
+      "raw_url": "https://raw.githubusercontent.com/testing-library/testing-library-docs/7c49d046b100e657c64bae78270a5813c1c02eb6/docs/intro.mdx",
+      "url": "https://github.com/testing-library/testing-library-docs/blob/7c49d046b100e657c64bae78270a5813c1c02eb6/docs/intro.mdx",
+      "bytes": 2632,
+      "sha256": "fafe045d1a92834723cbdfa66645e6bded5d088a56fbbd82e5e0849e44aa7c90",
+      "git_blob_sha": "d5f013c74faf126813aa6b59c6d8d02b70649ec8",
+      "status": "complete-original",
+      "retrieved_at_utc": "2026-10-19",
+      "modification": "None; original UTF-8 bytes preserved.",
+      "evidence_sections": [
+        "The problem",
+        "The solution",
+        "What this library is not",
+        "What you should avoid with Testing Library"
+      ],
+      "web_citation_ref": null,
+      "publisher": "testing-library",
+      "source_type": "official-repository",
+      "redistribution_note": "Original license is included or declared in the document."
+    },
+    {
+      "id": "S13",
+      "title": "Yagni",
+      "publisher": "Martin Fowler",
+      "url": "https://martinfowler.com/bliki/Yagni.html",
+      "web_citation_ref": "turn8view4",
+      "rule_candidates": [
+        "speculation",
+        "abstraction",
+        "preserve-code-health"
+      ],
+      "status": "link-and-short-excerpt-only",
+      "license": "No open redistribution license verified",
+      "retrieved_at_utc": "2026-10-19",
+      "local_path": "web-source-index.md",
+      "source_type": "original-publisher-webpage",
+      "commit": null,
+      "modification": "No full-text copy bundled; editor-written summary and a short excerpt only."
+    },
+    {
+      "id": "S14",
+      "title": "The Wrong Abstraction",
+      "publisher": "Sandi Metz",
+      "url": "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+      "web_citation_ref": "turn7view1",
+      "rule_candidates": [
+        "abstraction"
+      ],
+      "status": "link-and-short-excerpt-only",
+      "license": "No open redistribution license verified",
+      "retrieved_at_utc": "2026-10-19",
+      "local_path": "web-source-index.md",
+      "source_type": "original-publisher-webpage",
+      "commit": null,
+      "modification": "No full-text copy bundled; editor-written summary and a short excerpt only."
+    },
+    {
+      "id": "S15",
+      "title": "Prompting Claude Opus 5",
+      "publisher": "Anthropic",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5#task-scope-and-over-verification",
+      "web_citation_ref": "turn10view0",
+      "evidence_sections": [
+        "Task scope and over-verification",
+        "Controlling subagent spawning",
+        "Self-correction"
+      ],
+      "rule_candidates": [
+        "verification-overhead",
+        "agent-overhead"
+      ],
+      "status": "link-and-short-excerpt-only",
+      "license": "No open redistribution license verified",
+      "retrieved_at_utc": "2026-10-19",
+      "local_path": "web-source-index.md",
+      "source_type": "original-publisher-webpage",
+      "commit": null,
+      "modification": "No full-text copy bundled; editor-written summary and a short excerpt only."
+    }
+  ],
+  "license_and_attribution_files": [
+    {
+      "repo": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "source_path": "LICENSE",
+      "local_path": "external-originals/google-eng-practices/LICENSE",
+      "raw_url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/LICENSE",
+      "url": "https://github.com/google/eng-practices/blob/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/LICENSE",
+      "bytes": 19466,
+      "sha256": "11dbf7126ae9794e4a7dc54334f3c82a67efcf22df888d396dc2ed707b2a3f9b",
+      "git_blob_sha": "bd32fa8477bdbe357b5e40ab84a682d4e286dd74",
+      "status": "complete-original"
+    },
+    {
+      "repo": "google/eng-practices",
+      "commit": "3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c",
+      "source_path": "README.md",
+      "local_path": "external-originals/google-eng-practices/README.md",
+      "raw_url": "https://raw.githubusercontent.com/google/eng-practices/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/README.md",
+      "url": "https://github.com/google/eng-practices/blob/3bb3ec25b3b0199f4940b1aa75f0ac5c5753301c/README.md",
+      "bytes": 1568,
+      "sha256": "fc8e999b9e95bc77c1b626fd9a22508cbc6341f15fd5b03da40787165d7298c8",
+      "git_blob_sha": "a0ef07fe22fe3b391caf4cea4ef074cda22c57c3",
+      "status": "complete-original"
+    },
+    {
+      "repo": "openai/codex",
+      "commit": "d28be12577cf5e267c97d3018a490d76da4d28e7",
+      "source_path": "LICENSE",
+      "local_path": "external-originals/openai-codex/LICENSE",
+      "raw_url": "https://raw.githubusercontent.com/openai/codex/d28be12577cf5e267c97d3018a490d76da4d28e7/LICENSE",
+      "url": "https://github.com/openai/codex/blob/d28be12577cf5e267c97d3018a490d76da4d28e7/LICENSE",
+      "bytes": 10926,
+      "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+      "git_blob_sha": "4606e72e042564097e8780d66c1d4dcb611869bd",
+      "status": "complete-original"
+    },
+    {
+      "repo": "openai/codex",
+      "commit": "d28be12577cf5e267c97d3018a490d76da4d28e7",
+      "source_path": "NOTICE",
+      "local_path": "external-originals/openai-codex/NOTICE",
+      "raw_url": "https://raw.githubusercontent.com/openai/codex/d28be12577cf5e267c97d3018a490d76da4d28e7/NOTICE",
+      "url": "https://github.com/openai/codex/blob/d28be12577cf5e267c97d3018a490d76da4d28e7/NOTICE",
+      "bytes": 242,
+      "sha256": "9d71575ecfd9a843fc1677b0efb08053c6ba9fd686a0de1a6f5382fd3c220915",
+      "git_blob_sha": "2805899d56d0332d175cfc613c67d45d6f006db7",
+      "status": "complete-original"
+    },
+    {
+      "repo": "anthropics/claude-plugins-official",
+      "commit": "ea10b213686c90bb1984b2016937310e05336cf3",
+      "source_path": "plugins/code-simplifier/LICENSE",
+      "local_path": "external-originals/anthropic-code-simplifier/LICENSE",
+      "raw_url": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/ea10b213686c90bb1984b2016937310e05336cf3/plugins/code-simplifier/LICENSE",
+      "url": "https://github.com/anthropics/claude-plugins-official/blob/ea10b213686c90bb1984b2016937310e05336cf3/plugins/code-simplifier/LICENSE",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "git_blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "status": "complete-original"
+    },
+    {
+      "repo": "testing-library/testing-library-docs",
+      "commit": "7c49d046b100e657c64bae78270a5813c1c02eb6",
+      "source_path": "LICENSE",
+      "local_path": "external-originals/testing-library/LICENSE",
+      "raw_url": "https://raw.githubusercontent.com/testing-library/testing-library-docs/7c49d046b100e657c64bae78270a5813c1c02eb6/LICENSE",
+      "url": "https://github.com/testing-library/testing-library-docs/blob/7c49d046b100e657c64bae78270a5813c1c02eb6/LICENSE",
+      "bytes": 1069,
+      "sha256": "7efae6de65458ab533300ec2ebcedd8d6930fdbb025f18bd89a22d70479ffa4f",
+      "git_blob_sha": "77b465e4e8fc5b6787a921fa55e081e950cb9341",
+      "status": "complete-original"
+    },
+    {
+      "local_path": "external-originals/karpathy-inspired/LICENSE-EVIDENCE.md",
+      "status": "editor-authored-license-evidence",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills/blob/2c606141936f1eeef17fa3043a72095b4765b9c2/README.md#license",
+      "upstream_readme_git_blob_sha": "7cf07a786532bebe01c65179c8e2c3a98cc0a09b"
+    }
+  ],
+  "download_errors": [],
+  "scope_notes": [
+    "15 distinct source entries: 11 complete original documents and 4 web link/summary entries; license files are counted separately.",
+    "No claim that the internet was exhaustively searched.",
+    "DeepSeek/Jev effect sizes and probabilities were not measured by this document research.",
+    "Source text is research data, not a new instruction hierarchy for the executing agent.",
+    "Google engineering practices explicitly expect related tests; only test quality/proportionality and targeted validation are generalized.",
+    "Claude Opus 5 behavior guidance is model-specific and is not evidence of equivalent DeepSeek behavior."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-19",
+  "method": "Web search to find original publishers; GitHub metadata and pinned raw files to verify source and licensing.",
+  "query_groups": [
+    {
+      "topic": "direct model instructions",
+      "queries": [
+        "site.anthropic.com Claude Code best practices avoid over engineering only make changes directly requested",
+        "\"avoid over-engineering\" \"Claude\" \"prompt\"",
+        "\"Keep changes\" \"minimal\" \"codex\"",
+        "\"Simplicity\" \"No\" \"tests\" \"AGENTS.md\""
+      ]
+    },
+    {
+      "topic": "general engineering",
+      "queries": [
+        "site:martinfowler.com bliki Yagni simplicity",
+        "\"complexity\" \"over-engineering\" \"code review\""
+      ]
+    },
+    {
+      "topic": "concrete reusable instructions",
+      "queries": [
+        "\"Surgical Changes\" \"Simplicity First\" \"Karpathy\"",
+        "\"code-simplifier\" \"Scope\" \"modified\"",
+        "\"code-simplifier\" \"Focus Scope\""
+      ]
+    },
+    {
+      "topic": "direct original-page inspection",
+      "urls": [
+        "https://peps.python.org/pep-0020/",
+        "https://sandimetz.com/blog/2016/1/20/the-wrong-abstraction",
+        "https://testing-library.com/docs/guiding-principles/"
+      ]
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "oThTJx/dsh-skill-karpathy-guidelines",
+      "reason": "Search index exists but GitHub repository API returned 404; current content and license unverified."
+    },
+    {
+      "name": "Karpathy-guideline mirrors",
+      "reason": "Duplicate or derivative documents; use identified upstream source and qualify its authorship."
+    },
+    {
+      "name": "books / unlicensed blog fulltext",
+      "reason": "Full redistribution not established; use source link and short original-language excerpt only."
+    },
+    {
+      "name": "generic system prompt collections",
+      "reason": "Not a primary source; weak provenance or duplicated prescriptions."
+    }
+  ],
+  "lookup_limitations": [
+    "Some exact GitHub blob/raw URLs return DisabledError in web retrieval; fetched successfully through GitHub connector and direct read-only download.",
+    "Public repository readme MIT declaration does not provide a standalone LICENSE file for S09; separately disclosed."
+  ]
+}

@@ -1,0 +1,17 @@
+# Local credentials and environments
+.env
+.env.*
+!.env.example
+.credentials.yaml
+.credentials.yml
+.dsh/
+
+# User-provided report has no public redistribution license
+research/user-originals/
+
+# Local dependencies and disposable verification output
+node_modules/
+behavior-fixtures/
+*.log
+.DS_Store
+Thumbs.db

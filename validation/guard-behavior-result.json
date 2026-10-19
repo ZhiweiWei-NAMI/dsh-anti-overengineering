@@ -1,0 +1,52 @@
+{
+  "verified_at_utc": "2026-10-19T13:19:34.021031+00:00",
+  "runtime": "@deepseek-ai/dsh@0.2.1-rc.2",
+  "node": "v24.19.0",
+  "command": "node --preserve-symlinks --test --test-isolation=none --test-concurrency=1 --test-reporter=spec guard-behavior.test.mjs",
+  "cwd": "/workspace/scratch/8dbea8a97e61/anti-overengineering-work/verify-native",
+  "result": {
+    "tests": 12,
+    "pass": 12,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "exit_code": 0
+  },
+  "additional_check": {
+    "expression": "Config({rules:{AE03:{threshold:0.9}}}).rules",
+    "result": {
+      "AE03": {
+        "threshold": 0.9
+      }
+    }
+  },
+  "real_components": [
+    "@deepseek-ai/cordis Context",
+    "@deepseek-ai/dsh-tools ToolRuntime",
+    "@deepseek-ai/dsh-system-prompt",
+    "@deepseek-ai/dsh-session Session",
+    "@deepseek-ai/dsh-llm message constructors",
+    "@deepseek-ai/dsh-storage",
+    "@deepseek-ai/dsh-storage-json",
+    "@deepseek-ai/dsh-storage-domain"
+  ],
+  "fixtures": [
+    "Jev fetch response (no external inference requests)",
+    "credential resolver with explicit dummy string",
+    "preset identity selection",
+    "sessionStats.steps clock",
+    "approval answerer in ask cases"
+  ],
+  "sha256": {
+    "deliverable/dsh-anti-overengineering/index.js": "3c62c6b589055c3edc13d5c7424a54e0731691f2c467b5b894aadd4d5806f5ae",
+    "deliverable/dsh-anti-overengineering/policy.js": "a59469bd1305a8cf521ff3acca151edf5b38e47703711cd8ae02a38c7964d464",
+    "deliverable/dsh-anti-overengineering/rules.json": "c66af27530109c27e019accbed963043728495ea2d6f625cbfce5e6187ec00f6",
+    "deliverable/dsh-anti-overengineering/cordis.patch.yml": "8090a98027f1980bc06c3e3835e5adf0ab7a40d270fa0b586a22d0ad04cba367",
+    "verify-native/guard-behavior.test.mjs": "64d296915e5ecafed22a74edd080a3174a75ca11f587189cdcc55154fdf5dec4"
+  },
+  "runtime_bugs_found_and_fixed_by_root": [
+    "Schemastery has no literal/record/optional methods; switched to union of strings/dict/no required marker",
+    "Storage domain name must match /^[a-z][a-z0-9_]*$/; changed to anti_overengineering_v1"
+  ],
+  "final_followup": "Added one raw-string apply_patch batch-coverage case after proposedBatch fix; original 11 cases reran unchanged. Total 12 passed."
+}

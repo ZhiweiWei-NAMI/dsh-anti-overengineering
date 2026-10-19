@@ -1,0 +1,11 @@
+{
+  "runtime": "@deepseek-ai/dsh@0.2.1-rc.2",
+  "package_sha256": "d66659ce00290b8ec15af00c0c52d0160a816ea7d7fafd92dcb6dd54918f96e1",
+  "final_tgz_cli_install_exit_code": 0,
+  "web_started": true,
+  "http_status": 401,
+  "paid_inference_calls": 0,
+  "stopped_after_verification": true,
+  "result": "pass",
+  "note": "Unauthenticated GET returned expected 401 from native authenticated Web server. No model or Jev request was made; this verifies startup, not a live chat session."
+}

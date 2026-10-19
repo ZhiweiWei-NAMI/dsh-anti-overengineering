@@ -1,0 +1,692 @@
+{
+  "repository": "deepseek-ai/deepseek-harness",
+  "branch": "master",
+  "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+  "version": "0.2.1-rc.2",
+  "retrieved_on": "2026-10-19",
+  "license": "MIT",
+  "selection": "与反过度工程化规则及当前preset实现直接相关的原始文档和接口源码；不含测试及完整仓库；原路径原字节保留。",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/AGENTS.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "1eea3932544766e8a4ccc2d88dcba14ad0a3bd4e28fa660f920b9183f63e7196",
+      "bytes": 18675
+    },
+    {
+      "path": "packages/AGENTS.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/AGENTS.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "9954e1827bcee42e0637a1328972317476bfed6b2f12a7042b0d4c197b521c67",
+      "bytes": 6387
+    },
+    {
+      "path": "docs/AGENTS.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/AGENTS.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "cc76a90dfbdcdbf1db71b83675744c1c4039d9ccca8f38ad58a96ab56521578d",
+      "bytes": 11036
+    },
+    {
+      "path": ".agents/skills/dsh-find-simplifications/SKILL.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-find-simplifications/SKILL.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "09fc14a2f316a635488035a8879428e097ba2f55eeffa39f468182cf70bfd2fb",
+      "bytes": 10371
+    },
+    {
+      "path": ".agents/skills/dsh-find-simplifications/references/historical-patterns.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-find-simplifications/references/historical-patterns.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "54291e69eb96e6840ddf9322d09d5d19e24d875e67c7984cd328c03d19ce0e37",
+      "bytes": 8573
+    },
+    {
+      "path": ".agents/skills/dsh-pre-push-checks/SKILL.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-pre-push-checks/SKILL.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "abee8a5779ebb71844ef92d2496f762408a59bab5395434fbe20d556d0cf6040",
+      "bytes": 11283
+    },
+    {
+      "path": ".agents/skills/dsh-prose-standard/SKILL.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-prose-standard/SKILL.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "df56be84f9ee917a34055c9e229d06c409bce478de7bb0deb233240c1887f2eb",
+      "bytes": 9621
+    },
+    {
+      "path": ".agents/skills/dsh-prose-standard/references/examples.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-prose-standard/references/examples.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "ea37f63a96458206edc436ee71aa1a89b5219347f74556aa413ba1dfd1246572",
+      "bytes": 9457
+    },
+    {
+      "path": ".agents/skills/dsh-code-review/SKILL.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/skills/dsh-code-review/SKILL.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "f8c6985c099ddfa4f5091bf2a845d293ddd56216b6a5df6b35defc63979627bb",
+      "bytes": 10577
+    },
+    {
+      "path": ".agents/notes/implemented/process/2026-07-26-dependencies-over-hand-rolling.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/implemented/process/2026-07-26-dependencies-over-hand-rolling.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "2871fa28e049b4fcfdc05998df0f3aba815c1c024e9590e9341f3c13c3b3a5eb",
+      "bytes": 4798
+    },
+    {
+      "path": ".agents/notes/implemented/process/2026-07-26-dependencies-over-hand-rolling.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/implemented/process/2026-07-26-dependencies-over-hand-rolling.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "573698e7836bbe94f1ec7d683744698341f091e5cc847c65dd625e7c4581f0e9",
+      "bytes": 5020
+    },
+    {
+      "path": "docs/defensive-patterns/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "14f40ce8270e5a990343def5504ed8cb3ac0cdc6738289d4fdaf766e8347dc94",
+      "bytes": 2442
+    },
+    {
+      "path": "docs/defensive-patterns/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "1fd43117dd79b0357a63551805f3fb50ba977522ad834ea98d943d2006d42fd0",
+      "bytes": 2230
+    },
+    {
+      "path": "docs/defensive-patterns/general.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/general.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "7ebdc210c7de3e632050c6db847486a35332b0572cf17ecd4c0861bd6e018f75",
+      "bytes": 17884
+    },
+    {
+      "path": "docs/defensive-patterns/general.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/general.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "e7ea1e380a4e6d7ceb80ce9bce83262aa346e0d6897da289bcdd158de9fe930f",
+      "bytes": 17176
+    },
+    {
+      "path": "docs/defensive-patterns/package-surface.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/package-surface.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "ce589ea7f780a6a47b0c80cbeacae7dfd7404d91d31e098fa9dfe5969f7f1b85",
+      "bytes": 17274
+    },
+    {
+      "path": "docs/defensive-patterns/package-surface.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/package-surface.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "6d8e66800a69fecd4378f280d2e825ee83e18ef8060be41b8b3f64247ef1e4a1",
+      "bytes": 15797
+    },
+    {
+      "path": "docs/defensive-patterns/remote-and-api.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/remote-and-api.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "76e591c4e26d6a7f34ea58487c8e39838d6c1d2a48ab6f24612e789682c81d81",
+      "bytes": 11518
+    },
+    {
+      "path": "docs/defensive-patterns/remote-and-api.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/remote-and-api.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "33614792c5985a768757b52b5654453f5576129b55081d726e0a3e07f3ee117d",
+      "bytes": 10630
+    },
+    {
+      "path": "docs/defensive-patterns/client-components.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/client-components.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "1ff16ac5e474fff7dc03ef9f1e602f7a4c9e75b1fcf97907c9e263f2ef5b77f4",
+      "bytes": 32676
+    },
+    {
+      "path": "docs/defensive-patterns/client-components.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/client-components.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "0719e229376306af1b0cb9924e2f63cd7e827ca157011e85e2b1e89f77f5ab0e",
+      "bytes": 29918
+    },
+    {
+      "path": "docs/defensive-patterns/conversation-and-session.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/conversation-and-session.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "1da27eeb87a5ba3e9ad56b5cd412e75981a133073be1fde2723cbea473b098ba",
+      "bytes": 19990
+    },
+    {
+      "path": "docs/defensive-patterns/conversation-and-session.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/defensive-patterns/conversation-and-session.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "53c3cd71b12b355499860130e705a6cfec2ee1d5a98d660ec0633fc8f3d48042",
+      "bytes": 18308
+    },
+    {
+      "path": "docs/testing.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/testing.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "d51726817f87d7599e9d59e376435f3dbdd37fe0bba799ac0def348a0e7b5ea1",
+      "bytes": 10862
+    },
+    {
+      "path": "docs/testing.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/testing.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "反过度工程化与审查规则原文",
+      "sha256": "b9d3d8b52a63f3c5c9350d0b672eeaad4196928c54bbd56800f4a49749e0b31b",
+      "bytes": 11320
+    },
+    {
+      "path": "docs/architecture.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/architecture.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "95a7722c7096d665d8adedeb733b8f5ad7740e67cb5c6e9dc91ec05f430cb760",
+      "bytes": 18900
+    },
+    {
+      "path": "docs/architecture.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/architecture.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "50167dd1435ca402f11aa0ae27dc642456a7a6e511faa76b81f1fed25c7e12de",
+      "bytes": 18573
+    },
+    {
+      "path": "docs/cordis-primer.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/cordis-primer.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "f0cc573cc10b60d1bd76039fb0bd666edfb32c9b18027d4dc301c042a9e65d58",
+      "bytes": 4136
+    },
+    {
+      "path": "docs/cordis-primer.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/cordis-primer.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "db95af7a5ac91522087705c37a2c6aedad0767952b3f3980616f4d43bdee3f34",
+      "bytes": 4064
+    },
+    {
+      "path": "apps/cli/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/apps/cli/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "f80e7498e2718eb5ff85fd43d2e6d389ecceff24c4378651d0d89f3843c7a29e",
+      "bytes": 7284
+    },
+    {
+      "path": "apps/cli/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/apps/cli/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "52a3d6faef82968bc3ce8352d8010adebb1489a1accc9d402dd2e937d82cfba7",
+      "bytes": 7202
+    },
+    {
+      "path": "apps/cli/reference/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/apps/cli/reference/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "096dfde6adea92bac1a1999c859eb0fe2083e65d89b33397e88343fe86a64fbe",
+      "bytes": 30374
+    },
+    {
+      "path": "apps/cli/reference/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/apps/cli/reference/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "24aaeb2714e48bc4ba06a96daa0814bed2122369165aef496259710d751f43c5",
+      "bytes": 29412
+    },
+    {
+      "path": "packages/boot/app-boot/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/boot/app-boot/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "4f7fa2f1e9f175e480c11e1b4c1c9d8878b565b46c15e11d99ef4ff786bd26a2",
+      "bytes": 36303
+    },
+    {
+      "path": "packages/boot/app-boot/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/boot/app-boot/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "6eb401f5f0e4c2b36fbbdeb118dd0f315f8625cf881283362ecfce74a6525df4",
+      "bytes": 33789
+    },
+    {
+      "path": "packages/boot/plugin-manager/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/boot/plugin-manager/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "d3a3693a7e93a67126781cbf15e047858a65afbac1254c2180b4dcece6dd0b03",
+      "bytes": 28631
+    },
+    {
+      "path": "packages/boot/plugin-manager/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/boot/plugin-manager/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "4e58300b65777723285eddbad777e0dd4635a7b8ed7ce1c0e205ae351617194e",
+      "bytes": 26079
+    },
+    {
+      "path": "packages/preset/agent-preset/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/preset/agent-preset/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "3bff455be098ec17094a43cfd418ede99afbe6d6b4d3cb874840ee7ccf1f9101",
+      "bytes": 4210
+    },
+    {
+      "path": "packages/preset/agent-preset/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/preset/agent-preset/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "b7d586c7b84a536ce65cb4c497a51e30224d9cbe8e6cd8de20674debbd577ff1",
+      "bytes": 3934
+    },
+    {
+      "path": "packages/preset/agent-preset-registry/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/preset/agent-preset-registry/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "a8f6e2d1f462ff9566da2ca51ff3207cf994101408c6cac550e21e0a3830593c",
+      "bytes": 5845
+    },
+    {
+      "path": "packages/preset/agent-preset-registry/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/preset/agent-preset-registry/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "df6cb0bd96884e833d53327c17520b1ea881c712b3e5727077da2dd6e9237ce6",
+      "bytes": 5157
+    },
+    {
+      "path": "packages/preset/agent-preset/skills/cordis-composition-reference/SKILL.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/preset/agent-preset/skills/cordis-composition-reference/SKILL.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "6583a81d9f4de07032ebdee0d5ea1a925067277805798936a5297cf2bac4f5e3",
+      "bytes": 2806
+    },
+    {
+      "path": "packages/preset/agent-preset/skills/cordis-plugin-development/references/host-plugin.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/preset/agent-preset/skills/cordis-plugin-development/references/host-plugin.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "1d5b6ee648b5dd04462fb29075167a5dc570a8f4fd162b3c94ad40a78f2f627a",
+      "bytes": 5300
+    },
+    {
+      "path": "packages/bundle/web-app/presets/standard.patch.yml",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/bundle/web-app/presets/standard.patch.yml",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "0d398d2a6872a73a106cb3bd19303ecccf1637e1fcad4d0bf9d8a72d2c2c68f5",
+      "bytes": 6799
+    },
+    {
+      "path": "packages/bundle/web-app/presets/minimal.patch.yml",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/bundle/web-app/presets/minimal.patch.yml",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "a2a9ba1c9c392a45466708f18bc0aefbf300577f9b544dc06049f73a8a5b3267",
+      "bytes": 3724
+    },
+    {
+      "path": "packages/bundle/base/cordis.patch.yml",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/bundle/base/cordis.patch.yml",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "a2cc57868a4d016609801e28781262515483dde29b41c2742d9a3b27a6f52f77",
+      "bytes": 20932
+    },
+    {
+      "path": "packages/bundle/web-app/cordis.patch.yml",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/bundle/web-app/cordis.patch.yml",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "3e1f923309612ed8551141127409d662e78758e2d0d125218a3f70514417e472",
+      "bytes": 22796
+    },
+    {
+      "path": "packages/preset/agent-preset-registry/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/preset/agent-preset-registry/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原生preset bundle profile与安装要求",
+      "sha256": "f03d070aee4ec58eefdeab5ea128ca71e12108512997525672b0ad1c516205ec",
+      "bytes": 17622
+    },
+    {
+      "path": "docs/subsystems/tools.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/tools.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "b34e4f1569bb33cc1379bb44aae24a23c9f0f4af49c26e13a7f850dabea56488",
+      "bytes": 44912
+    },
+    {
+      "path": "docs/subsystems/tools.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/docs/subsystems/tools.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "9d352e8031035c84d1cb5296afd84d8531893e1d941bafba1773610340861dc3",
+      "bytes": 44548
+    },
+    {
+      "path": "packages/core/tools/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/tools/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "5617d22947d3b42e2cbb39aac08044d54cf828ff6a4a1569fc1313c37082c946",
+      "bytes": 20476
+    },
+    {
+      "path": "packages/core/tools/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/tools/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "b4ef23bb0848626ea98b99f308ba0eb442f34e889f3b3db8a665b24e6be23176",
+      "bytes": 19443
+    },
+    {
+      "path": "packages/core/tools/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/tools/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "398bcdeb221e450d088510830b77d99a513e65ab31e40ade71688a19cdf5e6aa",
+      "bytes": 91160
+    },
+    {
+      "path": "packages/core/tools/src/ptc.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/tools/src/ptc.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "6f7fbc75413f53196fbf5c7d78884939cb12905b2a5f09741d03d632b84d7ab4",
+      "bytes": 40905
+    },
+    {
+      "path": "packages/core/agent-loop/src/tool-calls.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/agent-loop/src/tool-calls.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "5c7e8d8ff0028b436efdd13e5dffa4801d2311c211c3af039e7dab705f87b303",
+      "bytes": 11591
+    },
+    {
+      "path": "packages/core/agent-loop/src/agent.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/agent-loop/src/agent.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "4add12f5c22bb1b8cf1dbc239c9b09fa3351feff2c936cb2b8900036468bd01b",
+      "bytes": 28972
+    },
+    {
+      "path": "packages/core/agent/src/runtime-types.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/agent/src/runtime-types.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "1ae0003c6968dc4af86e596d3ea08f6e517da0808e08089af2ed1818ab0651fc",
+      "bytes": 19197
+    },
+    {
+      "path": "packages/core/agent/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/agent/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "652a3283721fb5b52f0671c43d458b04c039d5bfe7e900894cc0f64229b68641",
+      "bytes": 16666
+    },
+    {
+      "path": "packages/core/agent/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/agent/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "d7e6b027a4f346c61b92f91c3d2998c1a99fbb45732f20e40c54bc1ad3feedda",
+      "bytes": 15714
+    },
+    {
+      "path": "packages/guard/repeat-tool-reminder/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/guard/repeat-tool-reminder/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "b5bf5f90e80f35e15dc94999a40ba526423eb9b02122f5e6b247e623b3721e97",
+      "bytes": 11539
+    },
+    {
+      "path": "packages/guard/repeat-tool-reminder/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/guard/repeat-tool-reminder/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "69f23f5bca399acb6b2b582792ec6a464366b1d9d3618c365027e4f61e86ada2",
+      "bytes": 10925
+    },
+    {
+      "path": "packages/guard/repeat-tool-reminder/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/guard/repeat-tool-reminder/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "1e917986fe9c5187d8f0fa11154ab2bf3b7c1d30db991540f4d1e62a2c59236d",
+      "bytes": 10619
+    },
+    {
+      "path": "packages/llm/llm/src/message.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/llm/llm/src/message.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "5826fb32bc3d6e2221a7a39cc8b4fecc57282540a332417bb9f2ac3522b5c7da",
+      "bytes": 11275
+    },
+    {
+      "path": "packages/fs/tool-fs/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/fs/tool-fs/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "8c14a541ff65e54c3321ce9675c807e320332d96eaa5078716632e4b73b0af80",
+      "bytes": 4313
+    },
+    {
+      "path": "packages/fs/tool-fs/src/write.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/fs/tool-fs/src/write.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "87287ca7774af83f8c4841a78bfcfe213c684d172648c7b108a0539d5c674d47",
+      "bytes": 7025
+    },
+    {
+      "path": "packages/fs/tool-fs/src/edit.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/fs/tool-fs/src/edit.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "2602b2482f5234ab26cddf656cbe0020b53dc69a36bb8a835b57a55ed23a2055",
+      "bytes": 7834
+    },
+    {
+      "path": "packages/fs/tool-str-replace-editor/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/fs/tool-str-replace-editor/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "工具写入检测与写前拒绝、注入API",
+      "sha256": "85e67235c8d0f747ebc5d1832961df3430e05d2f3fc46d43f1a2bd9895fd247b",
+      "bytes": 20526
+    },
+    {
+      "path": "packages/core/session/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/session/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "f9f43d36c4df64279ca8e1fa1baad1c67cd003c5d79fe26cfe5887057a8ab584",
+      "bytes": 22184
+    },
+    {
+      "path": "packages/core/session/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/session/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "1f7e452464e1aced9abdf95e70c56fcace3360b6f49bd8ac9889c1374aee00d5",
+      "bytes": 20707
+    },
+    {
+      "path": "packages/core/session/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/session/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "c1f08f7dcf4075eeebb13e6ea06b3f348bfeb85b8a5d4e4bfd1c3b93c1959332",
+      "bytes": 65812
+    },
+    {
+      "path": "packages/core/session/src/types.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/core/session/src/types.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "515cba50f366b06dc3caaab45e8ce98c48c80fc07684437aba014df13ce04f2f",
+      "bytes": 24681
+    },
+    {
+      "path": "packages/session/session-projection/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-projection/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "077040b56e3398a0441d7117a25684f41ce9a0b732aa342c769d931bc8cf1b40",
+      "bytes": 9884
+    },
+    {
+      "path": "packages/session/session-projection/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-projection/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "4a9efecabf7e4d36458ca05b35dbc81afd0a596721a8ab4509e8f3f460248908",
+      "bytes": 9217
+    },
+    {
+      "path": "packages/session/session-projection/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-projection/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "f6e57c06f57b20a74e87a8a476a7adfb67ccbbd3d924bd52420db93ac9a7381b",
+      "bytes": 31588
+    },
+    {
+      "path": "packages/session/session-stats/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-stats/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "52cefb89357447be0bcda7991b0b43b4e16ef52826eef9b5fba71416fedeaeed",
+      "bytes": 1123
+    },
+    {
+      "path": "packages/session/session-stats/src/types.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-stats/src/types.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "2042832a43440551f8c2a21b0aba9f5aa3029f9094e28cfa65ff44ee5b44d87f",
+      "bytes": 2044
+    },
+    {
+      "path": "packages/session/session-stats/src/projection.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/session/session-stats/src/projection.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "8e38b0c0c5a0e98c4184a82763363086133efc13b64d0a8b2a6c515e43f7d99c",
+      "bytes": 8853
+    },
+    {
+      "path": "packages/storage/storage-domain/README.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/storage/storage-domain/README.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "791cc1deb14c8ce0fbb1d9b10e31f644e72b05f47c85c81ea4ee2722d5758a49",
+      "bytes": 9356
+    },
+    {
+      "path": "packages/storage/storage-domain/README.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/storage/storage-domain/README.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "74936e4d6d02dc257792fa223e13dfa5a3806285cd65ab11729c10244fbcc171",
+      "bytes": 8868
+    },
+    {
+      "path": "packages/storage/storage-domain/src/index.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/storage/storage-domain/src/index.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "12f9dc7a1ba7bf0d4721e60b03f08a2132e0a8576c328c0b4c179b1c7baedbd8",
+      "bytes": 9764
+    },
+    {
+      "path": "packages/storage/storage-domain/src/spec.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/storage/storage-domain/src/spec.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "f08d0e7932b1bba40546d63f780359c12a81ebcba080d8b439a6eb960cf355cd",
+      "bytes": 7442
+    },
+    {
+      "path": "packages/storage/storage-domain/src/domain.ts",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/packages/storage/storage-domain/src/domain.ts",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "e9801b98454e45c530ea90293e6aaf3cba2d532ddf751a7e869fbe2524b12958",
+      "bytes": 12512
+    },
+    {
+      "path": ".agents/notes/implemented/architecture/2026-09-09-deprecate-synchronous-session-event-reads.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/implemented/architecture/2026-09-09-deprecate-synchronous-session-event-reads.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "4ac3f665cbed2c1c8922ed72f5fc157d37d16e97b56489b5a58f61c44550208e",
+      "bytes": 5780
+    },
+    {
+      "path": ".agents/notes/implemented/architecture/2026-09-09-deprecate-synchronous-session-event-reads.zh.md",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/.agents/notes/implemented/architecture/2026-09-09-deprecate-synchronous-session-event-reads.zh.md",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "轮次、恢复和原生持久化API",
+      "sha256": "6a10c73d17e77a5119383917d9db9ca2aaff663a7343e317fea70cd677015b36",
+      "bytes": 4982
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/deepseek-ai/deepseek-harness/blob/687f282e8625c6b8d11ff58211a90524be2e4317/LICENSE",
+      "commit": "687f282e8625c6b8d11ff58211a90524be2e4317",
+      "purpose": "原文授权",
+      "sha256": "ebb4f09972aee8608be255debaf78451a68e95c290f55c240dec2ecfa16ea6be",
+      "bytes": 1065
+    }
+  ],
+  "missing": []
+}

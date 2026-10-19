@@ -1,0 +1,173 @@
+{
+  "baseline-schema.json": {
+    "exit_code": 1,
+    "complete": false,
+    "diagnostics": [
+      {
+        "level": "warning",
+        "path": "/115",
+        "message": "config/contactFormUrl: regular-expression syntax or Unicode semantics require native validation"
+      },
+      {
+        "level": "warning",
+        "path": "/122",
+        "message": "config/host: transform callback validation and normalization are not executed or projected"
+      },
+      {
+        "level": "warning",
+        "path": "/123",
+        "message": "config/publicUrl: transform callback validation and normalization are not executed or projected"
+      },
+      {
+        "level": "warning",
+        "path": "/153",
+        "message": "config/transcriptView: loose validation can replace invalid values with defaults"
+      },
+      {
+        "level": "error",
+        "path": "/186",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      },
+      {
+        "level": "error",
+        "path": "/187",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      },
+      {
+        "level": "error",
+        "path": "/188",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      },
+      {
+        "level": "error",
+        "path": "/189",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      }
+    ],
+    "preset_and_guard_entries": [
+      {
+        "path": "/186",
+        "id": "preset-standard",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      },
+      {
+        "path": "/187",
+        "id": "preset-ptc",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      },
+      {
+        "path": "/188",
+        "id": "preset-minimal",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      },
+      {
+        "path": "/189",
+        "id": "preset-cordis",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      }
+    ]
+  },
+  "profile-schema.json": {
+    "exit_code": 1,
+    "complete": false,
+    "diagnostics": [
+      {
+        "level": "warning",
+        "path": "/115",
+        "message": "config/contactFormUrl: regular-expression syntax or Unicode semantics require native validation"
+      },
+      {
+        "level": "warning",
+        "path": "/122",
+        "message": "config/host: transform callback validation and normalization are not executed or projected"
+      },
+      {
+        "level": "warning",
+        "path": "/123",
+        "message": "config/publicUrl: transform callback validation and normalization are not executed or projected"
+      },
+      {
+        "level": "warning",
+        "path": "/153",
+        "message": "config/transcriptView: loose validation can replace invalid values with defaults"
+      },
+      {
+        "level": "error",
+        "path": "/186",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      },
+      {
+        "level": "error",
+        "path": "/187",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      },
+      {
+        "level": "error",
+        "path": "/188",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      },
+      {
+        "level": "error",
+        "path": "/189",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      },
+      {
+        "level": "error",
+        "path": "/191",
+        "message": "unrecognized Loader tree carrier; use cordis:group or cordis:include for native child collection"
+      }
+    ],
+    "preset_and_guard_entries": [
+      {
+        "path": "/186",
+        "id": "preset-standard",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      },
+      {
+        "path": "/187",
+        "id": "preset-ptc",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      },
+      {
+        "path": "/188",
+        "id": "preset-minimal",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      },
+      {
+        "path": "/189",
+        "id": "preset-cordis",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      },
+      {
+        "path": "/190",
+        "id": "anti-overengineering-runtime",
+        "name": "dsh-anti-overengineering",
+        "status": "schema",
+        "configRef": "#/$defs/config100"
+      },
+      {
+        "path": "/191",
+        "id": "preset-anti-overengineering",
+        "name": "@deepseek-ai/dsh-agent-preset",
+        "status": "schema",
+        "configRef": "#/$defs/config99"
+      }
+    ]
+  }
+}
